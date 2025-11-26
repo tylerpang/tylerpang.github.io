@@ -1,27 +1,358 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>calvinpang.com</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler A. Pang | Finance Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Header/Navigation -->
+    <header class="header glass">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <span class="logo-badge">TP</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="ri-moon-line theme-icon"></i>
+            </button>
+        </nav>
+    </header>
 
-	<main class="light-mode">
-		<div class="intro">Hi|Hola|Salut|您好|やあ|안녕</br>I'm Tyler!</div>
-		<div class="tagline"></div>
-	</main>
-	
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">Business Administration Student | Finance Enthusiast</div>
+                <h1 class="hero-title">Building a Career&nbsp;in <br><span class="gradient-text">Financial&nbsp;Services</span></h1>
+                <p class="hero-subtitle">
+                    I'm a motivated finance student with hands-on experience in investment management and business development. I'm passionate about combining analytical thinking with relationship-building to create value in the financial industry.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Connect With Me</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="finance-card glass-panel">
+                    <div class="card-header">
+                        <div class="card-title">Student Profile</div>
+                        <div class="live-indicator"><span class="dot"></span> Available</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric-row">
+                            <div class="metric-label">Current Focus</div>
+                            <div class="metric-value">Business Administration</div>
+                        </div>
+                        <div class="metric-row">
+                            <div class="metric-label">School</div>
+                            <div class="metric-value">Binghamton University</div>
+                        </div>
+                        <div class="metric-row">
+                            <div class="metric-label">Location</div>
+                            <div class="metric-value">New York, NY</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="market-stat">
+                            <div class="stat-label">Expected Graduation</div>
+                            <div class="stat-value">May 2027</div>
+                        </div>
+                        <div class="market-stat">
+                            <div class="stat-label">Career Interest</div>
+                            <div class="stat-value">Investment Banking & Analysis</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="lead-text">
+                        As an undergraduate student pursuing a Bachelor of Science in Business Administration at Binghamton University's School of Management, I am dedicated to blending academic knowledge with real-world experience.
+                    </p>
+                    <p>
+                        I previously served as the Social Chair for the Binghamton Fujianese Union, where I was passionate about promoting cultural awareness and fostering inclusivity on campus. Through organizing events and building community, I developed strong leadership and interpersonal skills that complement my finance education.
+                    </p>
+                    <p>
+                        My professional journey has taken me through two transformative summer internships—one focused on quantitative analysis and portfolio management, and another on business development in the fund administration space. These experiences have given me a comprehensive view of the financial services industry from both analytical and client-facing perspectives.
+                    </p>
+                    <p>
+                        In my leisure time, I enjoy maintaining a healthy lifestyle through regular gym workouts, immersing myself in captivating reads, and exploring culinary adventures in the kitchen. I believe in continuous growth, both professionally and personally.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="strategy-card glass-panel">
+                        <div class="strategy-header">
+                            <h3>What I Bring</h3>
+                        </div>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <span class="strategy-icon"><i class="ri-lightbulb-line"></i></span>
+                                <div class="strategy-info">
+                                    <h4>Eager to Learn</h4>
+                                    <p class="value-desc">Constantly seeking new knowledge and skills to grow professionally</p>
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-icon"><i class="ri-team-line"></i></span>
+                                <div class="strategy-info">
+                                    <h4>Team Player</h4>
+                                    <p class="value-desc">Proven ability to collaborate across departments and cultures</p>
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-icon"><i class="ri-bar-chart-line"></i></span>
+                                <div class="strategy-info">
+                                    <h4>Detail-Oriented</h4>
+                                    <p class="value-desc">Strong analytical skills with attention to accuracy in financial analysis</p>
+                                </div>
+                            </div>
+                            <div class="strategy-item">
+                                <span class="strategy-icon"><i class="ri-heart-line"></i></span>
+                                <div class="strategy-info">
+                                    <h4>Driven & Passionate</h4>
+                                    <p class="value-desc">Genuine enthusiasm for finance and commitment to excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-list">
+                <article class="project-card glass-panel experience-detailed">
+                    <div class="project-header">
+                        <h3>Global Fund Administration Firm</h3>
+                        <span class="project-icon"><i class="ri-briefcase-4-line"></i></span>
+                    </div>
+                    <p class="role-title"><strong>Business Development Intern</strong> | Summer 2025</p>
+                    <p>
+                        During my 10-week internship with the Business Development team, I gained in-depth product knowledge by exploring comprehensive service offerings, including fund administration, middle-office, and related technology solutions. I learned how these services support clients across the alternatives landscape and differentiate the firm in a competitive industry.
+                    </p>
+                    <p>
+                        I contributed to market research and analysis, focusing on industry trends, competitor positioning, and emerging opportunities. This gave me insight into how the firm identifies growth areas and aligns its solutions to client needs. I also learned about the business development process, including sales cycles and strategies used to strengthen client relationships and expand market presence.
+                    </p>
+                    <p>
+                        Beyond technical skills, I focused on professional development through mentorship from senior team members, networking events, and structured learning sessions. These opportunities provided invaluable perspective on career paths in business development and the broader financial services industry.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Business Development</span>
+                        <span class="tag">Market Research</span>
+                        <span class="tag">Fund Administration</span>
+                        <span class="tag">Client Relations</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-panel experience-detailed">
+                    <div class="project-header">
+                        <h3>Investment Management Firm</h3>
+                        <span class="project-icon"><i class="ri-line-chart-line"></i></span>
+                    </div>
+                    <p class="role-title"><strong>Summer Analyst</strong> | Summer 2024</p>
+                    <p>
+                        During my 10-week summer internship, I focused on complex financial tasks related to high net-worth investors, including data analysis and return calculations. I provided support by graphing and modeling prices, positions, and PnL, conducted peer analysis using performance metrics, and assisted with portfolio attribution and exposure calculations using raw trade data.
+                    </p>
+                    <p>
+                        These tasks gave me hands-on experience with proprietary strategies and quantitative trading models. I greatly improved my Excel skills, learning to work efficiently without a mouse, which was crucial for handling complex models and generating client analysis.
+                    </p>
+                    <p>
+                        I also gained insight into the legal aspects of the firm by participating in drafting SOPs and document amendments, deepening my understanding of regulatory and compliance issues in finance. These projects not only boosted my technical and analytical capabilities but also gave me a real taste of professional teamwork and how different departments work together.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Portfolio Analysis</span>
+                        <span class="tag">Excel Modeling</span>
+                        <span class="tag">Compliance</span>
+                        <span class="tag">Quantitative Trading</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-list">
+                <article class="project-card glass-panel">
+                    <div class="project-header">
+                        <h3>Fujianese Student Union</h3>
+                        <span class="project-icon"><i class="ri-group-line"></i></span>
+                    </div>
+                    <p class="role-title"><strong>Social Events Chairman</strong> | August 2023 – January 2025</p>
+                    <p>
+                        Led strategic planning and execution of 15+ cultural events and fundraising initiatives, managing budgets and coordinating teams of 10+ volunteers. Grew event attendance by 200% year-over-year, culminating in signature events with 80+ participants.
+                    </p>
+                    <p>
+                        Collaborated with executive board members to develop partnerships with university departments and local organizations, strengthening the organization's campus presence and securing resources for community enrichment programs.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-val">200%</span>
+                            <span class="metric-label">Growth</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">15+</span>
+                            <span class="metric-label">Events Led</span>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Budget Management</span>
+                        <span class="tag">Strategic Planning</span>
+                        <span class="tag">Team Coordination</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-panel">
+                    <div class="project-header">
+                        <h3>Game Development Club</h3>
+                        <span class="project-icon"><i class="ri-rocket-line"></i></span>
+                    </div>
+                    <p class="role-title"><strong>Founder & President</strong> | September 2022 – June 2023</p>
+                    <p>
+                        Founded and led a student organization focused on game development and programming education. Built and mentored a team of 12+ students in programming and Unity game engine, creating a collaborative learning environment that developed multiple game prototypes.
+                    </p>
+                    <p>
+                        Established curriculum for peer-to-peer technical instruction, organized weekly workshops, and coordinated cross-functional teams to deliver projects from concept to completion. Demonstrated initiative, project management, and ability to build engagement around shared technical goals.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-val">2</span>
+                            <span class="metric-label">Prototypes Built</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-val">12+</span>
+                            <span class="metric-label">Team Members</span>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Project Management</span>
+                        <span class="tag">Team Building</span>
+                        <span class="tag">Mentorship</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Interests</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card glass-panel">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="ri-code-box-line"></i></div>
+                        <h3>Technical</h3>
+                    </div>
+                    <ul>
+                        <li>Microsoft Office Suite</li>
+                        <li>Java (Basic)</li>
+                        <li>Python (Basic)</li>
+                        <li>C++ (Basic)</li>
+                        <li>Unity Game Engine</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="ri-translate-2"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <ul>
+                        <li>English (Native)</li>
+                        <li>Chinese (Fluent Spoken)</li>
+                        <li>Italian (Business Proficient)</li>
+                    </ul>
+                </div>
+                <div class="skill-card glass-panel">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="ri-heart-pulse-line"></i></div>
+                        <h3>Interests</h3>
+                    </div>
+                    <ul>
+                        <li>Chess & Strategy</li>
+                        <li>Outdoor Running & Fitness</li>
+                        <li>Cooking</li>
+                        <li>Long-distance Cycling</li>
+                        <li>Reading</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper glass-panel">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-intro">
+                        I'm currently seeking opportunities in finance and business development. Whether you're looking for an intern, have career advice, or just want to connect—I'd&nbsp;love&nbsp;to&nbsp;hear&nbsp;from&nbsp;you!
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/Tyler-Pang" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span class="link-icon"><i class="ri-linkedin-fill"></i></span> LinkedIn
+                        </a>
+                        <span class="social-link">
+                            <span class="link-icon"><i class="ri-map-pin-line"></i></span> New York, NY
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
