@@ -44,6 +44,50 @@ if (themeToggle) {
 }
 
 // ========================================
+// Menu Management
+// ========================================
+const menuToggle = document.getElementById('menu-toggle');
+const navDropdown = document.getElementById('nav-dropdown');
+const navLinks = document.querySelectorAll('.nav-link');
+
+function toggleMenu() {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    navDropdown.classList.toggle('active');
+    
+    const icon = menuToggle.querySelector('.menu-icon');
+    if (navDropdown.classList.contains('active')) {
+        icon.classList.remove('ri-menu-line');
+        icon.classList.add('ri-close-line');
+    } else {
+        icon.classList.remove('ri-close-line');
+        icon.classList.add('ri-menu-line');
+    }
+}
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+}
+
+// Close menu when clicking a link
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (navDropdown.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navDropdown.classList.contains('active') && 
+        !navDropdown.contains(e.target) && 
+        !menuToggle.contains(e.target)) {
+        toggleMenu();
+    }
+});
+
+// ========================================
 // Intersection Observer for Animations
 // ========================================
 const observerOptions = {
